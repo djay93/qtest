@@ -1,0 +1,18 @@
+{
+    "ny_address" :
+    {
+        "first_name" : "Dan",
+        "last_name" : "Paulson",
+        "company" : "Dan Co.",
+        "email": "mebisoft@gmail.com",
+        "phone": "5054041111",
+        "address" : "41 Madison Ave",
+        "address_2" : "Floor 25",
+        "zip_code" : "10010",
+        "country" : "United States",
+        "state" : "New York",
+        "city" : "New York"
+    }
+
+
+}

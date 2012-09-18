@@ -1,0 +1,29 @@
+{
+    "visa.match":
+    {
+        "cc_number" : "4007000000027",
+        "security_code": "900",
+        "exp_month" : "03 - March",
+        "exp_year" : "2015"
+    },
+    "visa.no.match":
+    {
+        "cc_number" : "4007000000027",
+        "security_code": "901"
+    },
+    "visa.not.processed":
+    {
+        "cc_number" : "4007000000027",
+        "security_code": "902"
+    },
+    "visa.not.certified":
+    {
+        "cc_number" : "4007000000027",
+        "security_code": "903"
+    },
+    "visa.not.certified.encrypted":
+    {
+        "cc_number" : "4007000000027",
+        "security_code": "904"
+    }
+}
