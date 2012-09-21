@@ -201,7 +201,7 @@ def execute_tests(params, settings, browsers):
         else:
             cmd = "nosetests %s %s" % ((settings.get('nose_single_test_args')), particular_test)
 
-        output, error = subprocess.Popen(cmd, shell=False, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
+        output, error = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).communicate()
 
         title = "%(name)s V:%(version)s (%(platform)s)" % browser
         print "\nOutput for: %s\n%s\n" % (title, '-' * 60)
