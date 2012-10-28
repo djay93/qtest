@@ -1,7 +1,7 @@
 [runner]
 nose_args=-s testcases -v --with-xunit --xunit-file=./junit-reports/ui-%(name)s-%(version)s-%(platform)s.xml
 nose_single_test_args=-s testcases -v
-selenium_rc_host=http://54.243.44.120:4444/wd/hub
+selenium_host=http://54.243.44.120:4444/wd/hub
 selenium_env=REMOTE
 base_url=http://beta.qualifiedhardware.com/
 user_name=rohini
