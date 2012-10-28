@@ -27,7 +27,7 @@ name=chrome
 platform=LINUX
 version=latest
 
-[firefox]
+[firefox-linux]
 name=firefox
 platform=LINUX
 version=latest
