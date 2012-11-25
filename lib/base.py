@@ -15,6 +15,7 @@ from selenium import webdriver
 from bs4 import BeautifulSoup
 from exceptions import *
 from testcases import LOC
+from pyvirtualdisplay import Display
 
 BROWSER = os.environ.get('SELENIUM_BROWSER', 'internetexplorer')
 VERSION = os.environ.get('SELENIUM_BROWSER_VERSION', None)
@@ -34,6 +35,9 @@ class BaseTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
+        cls.display = Display(visible=0, size=(1024, 768))
+        cls.display.start()
+
         if BROWSER.lower() not in DRIVERS:
             raise TypeError("You specified browser which not supported by Selenium: %s" % BROWSER)
 
@@ -59,6 +63,7 @@ class BaseTestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
+        cls.display.stop
 
     @classmethod
     def find_element(cls, element, parent=None):
