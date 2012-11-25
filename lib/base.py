@@ -63,7 +63,7 @@ class BaseTestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
-        cls.display.stop
+        cls.display.stop()
 
     @classmethod
     def find_element(cls, element, parent=None):
