@@ -35,9 +35,6 @@ class BaseTestCase(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
-        cls.display = Display(visible=0, size=(1024, 768))
-        cls.display.start()
-
         if BROWSER.lower() not in DRIVERS:
             raise TypeError("You specified browser which not supported by Selenium: %s" % BROWSER)
 
@@ -63,7 +60,6 @@ class BaseTestCase(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
-        cls.display.stop()
 
     @classmethod
     def find_element(cls, element, parent=None):
