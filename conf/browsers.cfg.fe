@@ -7,11 +7,6 @@ base_url=http://beta.qualifiedhardware.com/
 user_name=rohini
 password=pass123
 
-[firefox-linux]
-name=firefox
-platform=LINUX
-version=latest
-
 [chrome-linux]
 name=chrome
 platform=LINUX
