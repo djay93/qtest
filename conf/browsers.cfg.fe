@@ -11,3 +11,8 @@ password=pass123
 name=firefox
 platform=LINUX
 version=latest
+
+[chrome-linux]
+name=chrome
+platform=LINUX
+version=latest
